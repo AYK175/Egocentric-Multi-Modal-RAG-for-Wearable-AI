@@ -1,0 +1,15 @@
+{
+    "retrieval": {
+        "initial_k": 5,
+        "similarity_metric": "cosine",
+        "model": "CLIP-ViT-L-14"
+    },
+    "reranking": {
+        "use_cross_encoder": true,
+        "model": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "sub_query": {
+        "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+        "max_queries": 3
+    }
+}

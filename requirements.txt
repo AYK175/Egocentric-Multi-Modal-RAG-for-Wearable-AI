@@ -1,0 +1,23 @@
+torch>=2.4.0
+torchvision
+transformers>=4.45.0
+accelerate>=0.34.0
+bitsandbytes>=0.43.0  # Required for 4-bit quantization
+
+# Optimized Fine-Tuning and Inference
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+peft>=0.12.0
+
+# Data Processing and Utilities
+datasets>=3.0.0
+pandas
+numpy
+tqdm
+Pillow  # For egocentric image processing
+
+# Environment and API Management
+python-dotenv  # To manage HF_TOKEN and secrets
+huggingface_hub
+
+# Metric and Evaluation
+scikit-learn
